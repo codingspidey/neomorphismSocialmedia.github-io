@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(214, 214, 214);
+}
+.container{
+    width: 350px;
+    margin: 280px auto;
+}
+.btn{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    outline: none;
+    border: none;
+    background: rgb(214, 214, 214);
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+    border-radius: 50%;
+    transition: 0.2;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.btn:hover::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background: rgb(214, 214, 214);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.btn:hover::before{
+    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1), inset 7px 7px 20px 0 rgba(0,0,0,0.3);
+}
+.btn:active{
+    box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #ffffff;
+}
+.btn img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.2%;
+}
+.btn img:hover{
+    font-size: 30px;
+}
+   
+
